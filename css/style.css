@@ -1,38 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
 * {
     margin: 0px;
     padding: 0px;
-    font-family: Arial;
+    font-family: "Mulish", sans-serif;
     box-sizing: border-box;
+
 }
 
 body {
-    max-width: 1600px;
+    overflow-x: hidden;
     margin: 0 auto;
+    overflow-x: hidden;
+}
+
+.home-page {
+    max-width: 1400px;
 }
 
 header {
+    top: 56px;
     position: relative;
     overflow: visible;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 80px;
+    padding: 0px 80px;
     background-color: white;
     z-index: 100;
 }
 
 .dots-left {
     position: absolute;
-    left: -50px;
-    top: 160px;
+    left: -133px;
+    top: 80px;
     z-index: 0;
     opacity: 0.6;
 }
 
 
-
+/* .nav{
+    width: 350px;
+    display: flex;
+    margin-left: auto;
+} */
 
 .navbar {
+
     width: 100%;
     display: flex;
     align-items: center;
@@ -50,15 +64,18 @@ header {
     height: 35px;
 }
 
+
 .nav a {
     margin-left: 30px;
     text-decoration: none;
     color: #555;
-    font-size: 15px;
+    font-size: 18px;
+    font-weight: 400px;
 }
 
 .nav a:hover {
     color: #2b7de9;
+
 }
 
 /* HERO SECTION */
@@ -79,7 +96,7 @@ header {
 }
 
 .hero-text h1 {
-    font-weight: 700;
+    font-weight: 700px;
     font-size: 66px;
     color: #1a1a2e;
     line-height: 80px;
@@ -88,7 +105,7 @@ header {
 }
 
 .hero-text p {
-    font-weight: 300;
+    font-weight: 300px;
     font-size: 30px;
     color: #718096;
     line-height: 40px;
@@ -104,7 +121,7 @@ header {
     border-radius: 25px;
     text-decoration: none;
     font-size: 20px;
-    font-weight: 600;
+    font-weight: 400;
 }
 
 .btn:hover {
@@ -135,6 +152,16 @@ header {
     color: #1a1a2e;
     margin-bottom: 15px;
     font-weight: 700;
+}
+
+.services-underline {
+    width: 50px;
+    height: 4px;
+    background-color: #1a1a2e;
+    margin: 0 auto;
+    /* center karo */
+    margin-bottom: 50px;
+    border-radius: 2px;
 }
 
 /* Sub text */
@@ -328,7 +355,7 @@ header {
     height: 434px;
 }
 
-.btn1 {
+/* .btn1 {
     display: inline-block;
     background-color: transparent;
     border: 2px solid #2b7de9;
@@ -338,7 +365,7 @@ header {
     text-decoration: none;
     font-size: 20px;
     font-weight: 100;
-}
+} */
 
 /* TESTIMONIAL SECTION */
 .testimonial-section {
@@ -352,11 +379,12 @@ header {
 
 /* Main Blue Box */
 .testimonial-box {
+    top: 3724px;
     background: linear-gradient(135deg, #4a9ff5, #6cb8f8);
-    border-radius: 20px;
     padding: 50px 60px;
-    width: 100%;
-    max-width: 800px;
+    height: 425px;
+    width: 1120px;
+    border-radius: 24px;
     text-align: center;
 
     /* Blue border around box */
@@ -364,9 +392,10 @@ header {
 
 /* Heading */
 .testimonial-box h2 {
-    font-size: 26px;
+    font-size: 36px;
     color: white;
     font-weight: 700;
+    line-height: 48px;
     margin-bottom: 15px;
 }
 
@@ -390,15 +419,13 @@ header {
     padding: 25px 30px;
 }
 
-/* Avatar Box */
-.avatar-box {
-    flex-shrink: 0;
-    /* chota na ho */
-}
+
 
 .avatar {
-    width: 80px;
-    height: 80px;
+    top: 3929px;
+    left: 360px;
+    width: 141px;
+    height: 141px;
     border-radius: 50%;
     /* round image */
     object-fit: cover;
@@ -412,14 +439,17 @@ header {
 }
 
 .testimonial-info h4 {
-    font-size: 16px;
+    line-height: 30px;
+    font-size: 22px;
     color: white;
-    font-weight: 400;
+    font-weight: 700;
     margin-bottom: 5px;
 }
 
 .testimonial-info .role {
-    font-size: 13px;
+    font-size: 18px;
+    line-height: 38px;
+    font-weight: 400px;
     color: rgba(255, 255, 255, 0.8);
 }
 
@@ -433,10 +463,12 @@ header {
 
 /* Quote Text */
 .testimonial-quote p {
-    font-size: 13px;
+
+    font-size: 22px;
+    font-weight: 400;
     color: rgba(255, 255, 255, 0.95);
-    line-height: 1.8;
-    font-style: italic;
+    line-height: 30px;
+
 }
 
 /* =====================
@@ -444,6 +476,8 @@ header {
    ===================== */
 .testimonial-nav {
     display: flex;
+    justify-self: center;
+    margin-top: 30px;
     align-items: center;
     gap: 15px;
     margin-top: 25px;
@@ -451,6 +485,7 @@ header {
 
 /* Arrows */
 .arrow {
+    padding: 8px 12px;
     font-size: 20px;
     color: #2b7de9;
     cursor: pointer;
@@ -464,7 +499,7 @@ header {
 /* Dots */
 .dots {
     display: flex;
-    gap: 8px;
+    gap: 10px;
     align-items: center;
 }
 
@@ -556,6 +591,9 @@ header {
 
 /* Card */
 .article-card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
     background-color: white;
     border-radius: 16px;
     overflow: hidden;
@@ -579,6 +617,9 @@ header {
 
 /* Card Body */
 .article-body {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
     padding: 25px;
 }
 
@@ -608,6 +649,7 @@ header {
     display: flex;
     align-items: center;
     gap: 5px;
+    margin-top: auto;
 }
 
 .read-more:hover {
@@ -616,11 +658,13 @@ header {
 
 /* FOOTER */
 footer {
+    width: 100%;
     position: relative;
     overflow: hidden;
     background: linear-gradient(135deg, #67C3F3, #5A98F2);
-    padding: 60px 150px 30px 150px;
+    padding: 65px 120px 30px;
     color: white;
+    box-sizing: border-box;
 }
 
 .footer-dots-left {
@@ -700,14 +744,4 @@ footer {
 
 .footer-col a:hover {
     color: white;
-}
-
-/* =====================
-   BOTTOM PART
-   ===================== */
-.footer-bottom {
-    padding-top: 25px;
-    text-align: center;
-    font-size: 13px;
-    color: rgba(255, 255, 255, 0.6);
 }
